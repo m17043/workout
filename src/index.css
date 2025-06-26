@@ -1,0 +1,17 @@
+/* -------------------------------
+   Tailwind: 基本 3 行
+-------------------------------- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------------------
+   追加 : フォントと背景
+-------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+html,
+body,
+#root {
+  @apply h-full bg-gradient-to-br from-indigo-50 to-indigo-100 font-[Inter];
+}
