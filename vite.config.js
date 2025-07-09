@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vite.dev/config/
+// vite.config.js
 export default defineConfig({
-  base: '/', 
+  base: './', // ← 相対パスに変更！
   plugins: [
     react(),
     VitePWA({
