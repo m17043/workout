@@ -3,17 +3,10 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
-<<<<<<< HEAD
 // https://vite.dev/config/
-// vite.config.js
 export default defineConfig({
-  base: './', // ← 相対パスに変更！
-=======
-export default defineConfig({
-  /** GitHub Pages 用：必ずリポジトリ名で終わるパス */
-  base: '/workout/',
+  base: './', // ← Netlifyなどにdistごと上げるときは相対パスで！
 
->>>>>>> 498cfef62064891330f0cc65d8d73a42c6d0bf41
   plugins: [
     react(),
 
@@ -26,7 +19,7 @@ export default defineConfig({
         name: 'Workout Timer',
         short_name: 'Workout',
         description: 'Plank / Squat / Push-up timer & tracker',
-        start_url: '/workout/',            // 必ず base と合わせる
+        start_url: './',            // ← baseと同様に './' に変更
         display: 'standalone',
         theme_color: '#4f46e5',
         background_color: '#ffffff',
@@ -80,13 +73,10 @@ export default defineConfig({
       }
     })
   ],
-<<<<<<< HEAD
-=======
 
   /** ビルド出力フォルダと SourceMap 設定（省略可） */
   build: {
     outDir: 'dist',
     sourcemap: false
   }
->>>>>>> 498cfef62064891330f0cc65d8d73a42c6d0bf41
 });
