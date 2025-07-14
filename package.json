@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": false,
   "type": "module",
-  "homepage": "https://<YOUR-GITHUB-USERNAME>.github.io/workout/",
+  "homepage": "https://m17043.github.io/workout/",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
